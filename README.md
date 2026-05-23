@@ -1,5 +1,5 @@
 # DYNAMO --- DYnamic Neural Architecture with Metabolic Optimization
-
+# Imp: DTN = DYNAMO So, don't confuse with DTN in the code. I will commit changes later. 
 **DYNAMO: Algorithmic Thermodynamics for Continual Learning via Neural Morphogenesis**
 
 DYNAMO is a biologically-inspired continual-learning architecture that treats a neural network as an **open thermodynamic system**. Neurons grow, prune, and replicate in response to gradient-derived "metabolic signals", enabling a single model to learn a sequence of tasks without catastrophic forgetting.
