@@ -1,0 +1,2 @@
+[console_scripts]
+dtn-run = scripts.run_all:main
