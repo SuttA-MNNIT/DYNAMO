@@ -1,8 +1,8 @@
-# Dynamic Thermodynamic Network (DTN)
+# DYNAMO --- DYnamic Neural Architecture with Metabolic Optimization
 
-**Algorithmic Thermodynamics: Continual Learning via Differentiable Neural Morphogenesis and Parameter Metabolism**
+**DYNAMO: Algorithmic Thermodynamics for Continual Learning via Neural Morphogenesis**
 
-DTN is a biologically-inspired continual-learning architecture that treats a neural network as an **open thermodynamic system**. Neurons grow, prune, and replicate in response to gradient-derived "metabolic signals", enabling a single model to learn a sequence of tasks without catastrophic forgetting.
+DYNAMO is a biologically-inspired continual-learning architecture that treats a neural network as an **open thermodynamic system**. Neurons grow, prune, and replicate in response to gradient-derived "metabolic signals", enabling a single model to learn a sequence of tasks without catastrophic forgetting.
 
 ---
 
@@ -73,8 +73,7 @@ dtn/
 ### 1. Install
 
 ```bash
-git clone https://github.com/<your-org>/dtn.git
-cd dtn
+git clone https://github.com/SuttA-MNNIT/DYNAMO.git
 pip install -e ".[dev]"
 ```
 
@@ -104,7 +103,7 @@ pytest tests/ -v
 ### Experiment 1 — Split-MNIST
 
 Five binary tasks from MNIST: (0/1), (2/3), (4/5), (6/7), (8/9).  
-Models compared: **DTN**, **Dense SGD**, **EWC**, **PNN**.
+Models compared: **DYNAMO**, **Dense SGD**, **EWC**, **PNN**.
 
 Key metrics reported:
 - Average accuracy after all tasks (AT)
@@ -116,7 +115,7 @@ Key metrics reported:
 
 100 classes split into 10 task groups.  
 A frozen **ViT-B/16** (pretrained on ImageNet) extracts 768-d features.  
-Models compared: **DTN**, **Dense SGD**, **EWC**.
+Models compared: **DYNAMO**, **Dense SGD**, **EWC**.
 
 ### Ablations
 
@@ -158,11 +157,11 @@ dtn_mnist:
 ## Citation
 
 ```bibtex
-@article{dtn2024,
-  title   = {Algorithmic Thermodynamics: Continual Learning via
-             Differentiable Neural Morphogenesis and Parameter Metabolism},
-  author  = {DTN Authors},
-  year    = {2024},
+@article{dynamo2026,
+  title   = {DYNAMO: Algorithmic Thermodynamics for Continual Learning via Neural Morphogenesis},
+  journal = {IEEE Transactions on Neural Networks and Learning Systems}
+  author  = {Ravi Prakash},
+  year    = {2026},
 }
 ```
 
