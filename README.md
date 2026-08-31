@@ -154,19 +154,6 @@ dtn_mnist:
 
 ---
 
-## Citation
-
-```bibtex
-@article{dynamo2026,
-  title   = {DYNAMO: Algorithmic Thermodynamics for Continual Learning via Neural Morphogenesis},
-  journal = {IEEE Transactions on Neural Networks and Learning Systems}
-  author  = {Ravi Prakash},
-  year    = {2026},
-}
-```
-
----
-
 ## License
 
 MIT
