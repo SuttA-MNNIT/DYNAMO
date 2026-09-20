@@ -144,16 +144,6 @@ dtn_mnist:
 
 ---
 
-## Implementation Notes (Deviations from Paper)
-
-1. **Masked-dense layers** instead of true COO sparse tensors — semantically identical math, much faster on modern hardware with Tensor Cores.
-2. **Multi-head output** — task-incremental scenario; the shared backbone is where forgetting occurs.
-3. **Uniform Bernoulli nascent nodes** — simplified random-walk init at fixed 10 % density instead of distance-decay (Eq. 7), since graph distance is ambiguous in the masked-dense setting.
-4. **Bias-gradient heat via EMA** — Eq. (4) approximated as EMA over squared bias gradients (α=0.9), equivalent to the continuous integral with γ as time-constant.
-5. **Energy initialised to 1.0** — paper is silent on initial conditions.
-
----
-
 ## License
 
 MIT
